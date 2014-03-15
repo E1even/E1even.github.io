@@ -1,0 +1,24 @@
+/* effects */
+.blur
+{
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+.rotate120
+{
+    -webkit-transform:rotate(120deg);-moz-transform:rotate(120deg);-ms-transform:rotate(120deg);;-o-transform:rotate(120deg);
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.rotate240
+{
+    -webkit-transform:rotate(240deg);-moz-transform:rotate(240deg);-ms-transform:rotate(240deg);;-o-transform:rotate(240deg);
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.rotate360
+{
+    -webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);;-o-transform:rotate(360deg);
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
