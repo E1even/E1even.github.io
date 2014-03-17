@@ -14,6 +14,12 @@
 {
     font-size: 1280px;
 }
+.device_display
+{
+    display: block;
+    width: 360px;
+    height:270px;
+}
 
 *
 {
@@ -21,6 +27,8 @@
     padding: 0;
     z-index: 0;
     cursor: default;
+    text-decoration: none;
+    list-style: none;
 }
 html,body
 {
@@ -55,6 +63,7 @@ html,body
     top: 2%;
     left: 48%;
     z-index: 10;
+    box-shadow: 0 0 5px black;
 }
 .btn_down
 {
@@ -64,10 +73,11 @@ html,body
     top: 95%;
     left: 48%;
     z-index: 10;
+    box-shadow: 0 0 5px black;
 }
 
 
-/* page 1 */
+/* page 1 cover */
 .page_cover
 {
     background: url("../img/bg1.jpg") no-repeat;
@@ -86,7 +96,8 @@ html,body
     text-shadow:0 0 5px black;
 }
 
-/* page 2 */
+
+/* page 2 parallax */
 .page_parallax
 {
     overflow: hidden;
@@ -254,6 +265,354 @@ html,body
 .parallax_content span
 {
     display: block;
+}
+
+
+/* page 3 device */
+.page_device
+{
+    background: lightgoldenrodyellow;
+}
+.device_nav
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 6.5%;
+    background: white;
+    box-shadow: 0 0 5px grey;
+    font-size: 1.7%;
+    line-height: 220%;
+    z-index: 5;
+}
+.device_nav span
+{
+    display: block;
+    width: 27.5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: dimgrey;
+    text-align: right;
+}
+.device_btns
+{
+    display: block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 28%;
+    top: 0;
+    color: dimgrey;
+    text-align: center;
+}
+.device_btn1
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    left: 0;
+}
+.device_btn1:hover
+{
+    color: blueviolet;
+}
+.device_btn2
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    left: 20%;
+}
+.device_btn2:hover
+{
+    color: seagreen;
+}
+.device_btn3
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    left: 40%;
+}
+.device_btn3:hover
+{
+    color: dodgerblue;
+}
+.device_btn_hover1
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 0;
+    background: blueviolet;
+    -webkit-transition: all linear 0.2s;-moz-transition: all linear 0.2s;-ms-transition: all linear 0.2s;-o-transition: all linear 0.2s;transition: all linear 0.2s;
+}
+.device_btn_hover2
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 0;
+    background: lightseagreen;
+    -webkit-transition: all linear 0.2s;-moz-transition: all linear 0.2s;-ms-transition: all linear 0.2s;-o-transition: all linear 0.2s;transition: all linear 0.2s;
+}
+.device_btn_hover3
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 0;
+    background: dodgerblue;
+    -webkit-transition: all linear 0.2s;-moz-transition: all linear 0.2s;-ms-transition: all linear 0.2s;-o-transition: all linear 0.2s;transition: all linear 0.2s;
+}
+.device_btn_hovered
+{
+    height:10%;
+}
+.device_btn_clicked
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 10%;
+    background: dimgrey;
+}
+
+.device
+{
+    width: 54%;
+    height: 96%;
+    position: absolute;
+    top:0;
+    right: 10%;
+}
+.device_mainpart
+{
+    position: absolute;
+    border-radius: 5%;
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.device_screenpart
+{
+    background: lightgrey;
+    position: absolute;
+    overflow: hidden;
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.device_buttonpart
+{
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    bottom:2%;
+    background: #666;
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.device_connectpart
+{
+    position: absolute;
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.device_bottompart
+{
+    position: absolute;
+    -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.desktop
+{}
+.desktop .device_mainpart
+{
+    width: 60%;
+    height: 45%;
+    left: 20%;
+    top: 20%;
+    background:grey;
+}
+.desktop .device_screenpart
+{
+    width: 86%;
+    height: 80%;
+    top: 10%;
+    left: 7%;
+}
+.desktop .device_buttonpart
+{
+    width: 0;
+    height: 0;
+}
+.desktop .device_connectpart
+{
+    width: 10%;
+    height: 5%;
+    left: 45%;
+    top: 65%;
+    background: darkgrey;
+}
+.desktop .device_bottompart
+{
+    width: 30%;
+    height: 5%;
+    left: 35%;
+    top: 70%;
+    background: darkgrey;
+}
+.laptop
+{}
+.laptop .device_mainpart
+{
+    width: 56%;
+    height: 40%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    left: 22%;
+    top: 30%;
+    background: black;
+}
+.laptop .device_screenpart
+{
+    width: 86%;
+    height: 80%;
+    top: 10%;
+    left: 7%;
+}
+.laptop .device_buttonpart
+{
+    width: 0;
+    height: 0;
+}
+.laptop .device_connectpart
+{
+    width: 10%;
+    height: 0%;
+    left: 45%;
+    top: 70%;
+    background: #bbb;
+}
+.laptop .device_bottompart
+{
+    width: 64%;
+    height: 5%;
+    left: 18%;
+    top: 70%;
+    background: darkgrey;
+}
+.tablet
+{}
+.tablet .device_mainpart
+{
+    width: 40%;
+    height: 52%;
+    left: 30%;
+    top: 23%;
+    background: white;
+}
+.tablet .device_screenpart
+{
+    width: 86%;
+    height: 80%;
+    top: 10%;
+    left: 7%;
+}
+.tablet .device_buttonpart
+{
+    width: 8%;
+    height: 6%;
+}
+.tablet .device_connectpart
+{
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    top: 75%;
+    background: #bbb;
+}
+.tablet .device_bottompart
+{
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    top: 75%;
+    background: #aaa;
+}
+
+/* win8.1 */
+.device_display1
+{
+    background: #4A1092;
+    font-size: 4%;
+}
+.device_display1 ul
+{
+    display: block;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    left: 11%;
+    top:26%;
+}
+.device_display1 li
+{
+    display: block;
+    position: absolute;
+}
+/**/
+.device_display2
+{
+    display: none;
+    width: 100%;
+    height:100%;
+    background: green;
+    font-size: 4%;
+}
+.device_display3
+{
+    display: none;
+    width: 100%;
+    height:100%;
+    background: red;
+    font-size: 4%;
+}
+
+.device_cards
+{
+    display: none;
+    width: 25%;
+    height: 50%;
+    border-radius: 1%;
+    box-shadow: 0 0 3px lightgrey;
+    position: absolute;
+    left: 18%;
+    top: 22%;
+    font-size: 3%;
+    word-wrap: break-word;
+}
+.device_card1
+{
+    background: deepskyblue;
+}
+.device_card2
+{
+    background: palevioletred;
+}
+.device_card3
+{
+    background: lightgreen;
 }
 
 

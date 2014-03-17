@@ -49,6 +49,7 @@ $(document).ready(function(){
         }
     });
 
+
     //parallax
     $(".parallax_btn1").click(function(){
         $(".parallax_wrap").animate({top:'0'},"linear");
@@ -75,5 +76,49 @@ $(document).ready(function(){
         $(".parallax_content").animate({left:'150%'},100);
         $(".parallax_content3").animate({left:'60%'},1000);
     });
+
+
+    //device
+    $(".device_btn1").hover(function(){
+        $(".device_btn_hover1").addClass("device_btn_hovered");
+    },function(){
+        $(".device_btn_hover1").removeClass("device_btn_hovered");
+    }).click(function(){
+            $(".device").removeClass("desktop laptop tablet").addClass("desktop");
+            $(".device_btn1").find("div").addClass("device_btn_clicked").parent("li").siblings().children("div").removeClass("device_btn_clicked");
+            $(".device_cards").slideUp();
+            $(".device_card1").slideDown();
+        });
+    $(".device_btn2").hover(function(){
+        $(".device_btn_hover2").addClass("device_btn_hovered");
+    },function(){
+        $(".device_btn_hover2").removeClass("device_btn_hovered");
+    }).click(function(){
+            $(".device").removeClass("desktop laptop tablet").addClass("laptop");
+            $(".device_btn2").find("div").addClass("device_btn_clicked").parent("li").siblings().children("div").removeClass("device_btn_clicked");
+            $(".device_cards").slideUp();
+            $(".device_card2").slideDown();
+        });
+    $(".device_btn3").hover(function(){
+        $(".device_btn_hover3").addClass("device_btn_hovered");
+    },function(){
+        $(".device_btn_hover3").removeClass("device_btn_hovered");
+    }).click(function(){
+            $(".device").removeClass("desktop laptop tablet").addClass("tablet");
+            $(".device_btn3").find("div").addClass("device_btn_clicked").parent("li").siblings().children("div").removeClass("device_btn_clicked");
+            $(".device_cards").slideUp();
+            $(".device_card3").slideDown();
+        });
+
+
+    /*$("#dd").click(function(){
+       $(".device").removeClass("desktop laptop tablet").addClass("desktop");
+    });
+    $("#ll").click(function(){
+        $(".device").removeClass("desktop laptop tablet").addClass("laptop");
+    });
+    $("#tt").click(function(){
+        $(".device").removeClass("desktop laptop tablet").addClass("tablet");
+    });*/
 
 });
