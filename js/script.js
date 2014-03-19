@@ -85,6 +85,8 @@ $(document).ready(function(){
         $(".device_btn_hover1").removeClass("device_btn_hovered");
     }).click(function(){
             $(".device").removeClass("desktop laptop tablet").addClass("desktop");
+            $(".device_display1").siblings().fadeOut();
+            $(".device_display1").fadeIn();
             $(".device_btn1").find("div").addClass("device_btn_clicked").parent("li").siblings().children("div").removeClass("device_btn_clicked");
             $(".device_cards").slideUp();
             $(".device_card1").slideDown();
@@ -95,6 +97,8 @@ $(document).ready(function(){
         $(".device_btn_hover2").removeClass("device_btn_hovered");
     }).click(function(){
             $(".device").removeClass("desktop laptop tablet").addClass("laptop");
+            $(".device_display2").siblings().fadeOut();
+            $(".device_display2").fadeIn();
             $(".device_btn2").find("div").addClass("device_btn_clicked").parent("li").siblings().children("div").removeClass("device_btn_clicked");
             $(".device_cards").slideUp();
             $(".device_card2").slideDown();
@@ -105,6 +109,8 @@ $(document).ready(function(){
         $(".device_btn_hover3").removeClass("device_btn_hovered");
     }).click(function(){
             $(".device").removeClass("desktop laptop tablet").addClass("tablet");
+            $(".device_display3").siblings().fadeOut();
+            $(".device_display3").fadeIn();
             $(".device_btn3").find("div").addClass("device_btn_clicked").parent("li").siblings().children("div").removeClass("device_btn_clicked");
             $(".device_cards").slideUp();
             $(".device_card3").slideDown();

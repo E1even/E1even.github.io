@@ -3,24 +3,6 @@
     src: url(../font/Lovelo%20Line%20Light.otf);
 }
 
-.container
-{
-    width: 1280px;
-    height: 720px;
-    position: absolute;
-    top: 0;
-}
-.font
-{
-    font-size: 1280px;
-}
-.device_display
-{
-    display: block;
-    width: 360px;
-    height:270px;
-}
-
 *
 {
     margin: 0;
@@ -61,7 +43,7 @@ html,body
     width: 4%;
     position:fixed;
     top: 2%;
-    left: 48%;
+    left: 95%;
     z-index: 10;
     box-shadow: 0 0 5px black;
 }
@@ -71,7 +53,7 @@ html,body
     width: 4%;
     position:fixed;
     top: 95%;
-    left: 48%;
+    left: 95%;
     z-index: 10;
     box-shadow: 0 0 5px black;
 }
@@ -271,7 +253,9 @@ html,body
 /* page 3 device */
 .page_device
 {
-    background: lightgoldenrodyellow;
+    background:url("../img/bg_cloud.png") no-repeat;
+    background-position-y: 6%;
+    background-color: #C0DEED;
 }
 .device_nav
 {
@@ -410,7 +394,6 @@ html,body
 }
 .device_screenpart
 {
-    background: lightgrey;
     position: absolute;
     overflow: hidden;
     -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
@@ -421,7 +404,6 @@ html,body
     position: absolute;
     left: 47%;
     bottom:2%;
-    background: #666;
     -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
 }
 .device_connectpart
@@ -443,6 +425,7 @@ html,body
     left: 20%;
     top: 20%;
     background:grey;
+    box-shadow: 0 0 3px grey;
 }
 .desktop .device_screenpart
 {
@@ -450,6 +433,7 @@ html,body
     height: 80%;
     top: 10%;
     left: 7%;
+    box-shadow:inset 0 0 3px grey;
 }
 .desktop .device_buttonpart
 {
@@ -463,14 +447,16 @@ html,body
     left: 45%;
     top: 65%;
     background: darkgrey;
+    box-shadow: 0 0 3px grey;
 }
 .desktop .device_bottompart
 {
     width: 30%;
-    height: 5%;
+    height: 4%;
     left: 35%;
     top: 70%;
     background: darkgrey;
+    box-shadow: 0 0 3px grey;
 }
 .laptop
 {}
@@ -483,6 +469,7 @@ html,body
     left: 22%;
     top: 30%;
     background: black;
+    box-shadow: 0 0 3px grey;
 }
 .laptop .device_screenpart
 {
@@ -490,6 +477,7 @@ html,body
     height: 80%;
     top: 10%;
     left: 7%;
+    box-shadow: inset 0 0 3px grey;
 }
 .laptop .device_buttonpart
 {
@@ -507,7 +495,8 @@ html,body
 .laptop .device_bottompart
 {
     width: 64%;
-    height: 5%;
+    height: 3%;
+    border-radius: 10%;
     left: 18%;
     top: 70%;
     background: darkgrey;
@@ -521,6 +510,7 @@ html,body
     left: 30%;
     top: 23%;
     background: white;
+    box-shadow: 0 0 3px grey;
 }
 .tablet .device_screenpart
 {
@@ -528,11 +518,13 @@ html,body
     height: 80%;
     top: 10%;
     left: 7%;
+    box-shadow: inset 0 0 3px grey;
 }
 .tablet .device_buttonpart
 {
     width: 8%;
     height: 6%;
+    background: #ccc;
 }
 .tablet .device_connectpart
 {
@@ -554,39 +546,84 @@ html,body
 /* win8.1 */
 .device_display1
 {
+    display: block;
+    width: 100%;
+    height:100%;
     background: #4A1092;
     font-size: 4%;
 }
-.device_display1 ul
+.device_display1 table
 {
-    display: block;
     width: 80%;
     height: 60%;
     position: absolute;
-    left: 11%;
-    top:26%;
+    left: 10%;
+    top: 25%;
+    border-collapse: collapse;
 }
-.device_display1 li
+.device_display1 td
 {
-    display: block;
-    position: absolute;
+    border: 1px solid rgba(0,0,0,0);
 }
-/**/
+
+/* mac */
 .device_display2
 {
     display: none;
     width: 100%;
     height:100%;
-    background: green;
+    background: dimgrey;
     font-size: 4%;
 }
+.device_display2 ul
+{
+    position: absolute;
+    left: 23%;
+    bottom: 0;
+    display: block;
+    width: 54%;
+    height: 6%;
+    background: #669;
+}
+.device_display2 li
+{
+    display: block;
+    width: 7%;
+    height: 95%;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    bottom:40%;
+}
+/* pad */
 .device_display3
 {
     display: none;
     width: 100%;
     height:100%;
-    background: red;
+    background: url("../img/bg_tablet.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
     font-size: 4%;
+    box-shadow: inset 0 0 5px grey;
+}
+.device_display3 ul
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.device_display3 li
+{
+    display: block;
+    width: 12%;
+    height: 10%;
+    border-radius: 30%;
+    position: absolute;
+    background: white;
 }
 
 .device_cards
