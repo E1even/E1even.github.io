@@ -3,8 +3,8 @@
  */
 $(document).ready(function(){
 
-    $("#btn_enter").css("display","block");
     $(".bar_in").animate({width:'100%'},11000,"linear");
+    $("#btn_enter").css("display","block").addClass("btn_down");
 
     //initial pages
     $(".page_middle").nextAll().addClass("page_bottom");
