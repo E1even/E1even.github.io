@@ -4,8 +4,7 @@
 $(document).ready(function(){
 
     $(window).load(function(){
-        $(".bar_in").animate({width:'100%'},11000,"linear");
-        $("#btn_enter").animate({top:'80%'});
+        $(".bar_in").animate({width:'100%'},11000,"linear",function(){$("#btn_enter").animate({top:'95%'});});
     })
 
 
