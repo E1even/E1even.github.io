@@ -41,7 +41,7 @@ html,body
 {
     display: block;
     width: 4%;
-    position:fixed;
+    position:absolute;
     top: 2%;
     left: 95%;
     z-index: 10;
@@ -51,7 +51,7 @@ html,body
 {
     display: block;
     width: 4%;
-    position:fixed;
+    position:absolute;
     top: 95%;
     left: 95%;
     z-index: 10;

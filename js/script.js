@@ -3,6 +3,9 @@
  */
 $(document).ready(function(){
 
+    $("#btn_enter").css("display","block");
+    $(".bar_in").animate({width:'100%'},11000,"linear");
+
     //initial pages
     $(".page_middle").nextAll().addClass("page_bottom");
     $(".page_middle").prevAll().addClass("page_top");

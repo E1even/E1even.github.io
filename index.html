@@ -15,12 +15,109 @@
 </head>
 <body>
 
-<img src="img/up.png" class="btn_up">
-<img src="img/down.png" class="btn_down">
+<style>
+    #page_loading
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* Full Width */
+        background: url("img/bg_loading.gif");
+    }
 
+    .bar_out
+    {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 5px;
+        background: black;
+    }
+    .bar_in
+    {
+        position: absolute;
+        top: 2px;
+        width: 95%;
+        height: 1px;
+        margin: 0;
+        background: #2187e7;
+        position: absolute;
+        box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.7);
+        -moz-animation: fullexpand 10s ease-out;
+        -webkit-animation: fullexpand 10s ease-out;
+    }
+
+    /* Full Width Animation Bar */
+    @-moz-keyframes fullexpand {
+        0%  { width: 0px;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @-webkit-keyframes fullexpand
+    {
+        0%
+        {
+            width: 0px;
+        }
+        10%
+        {
+            width: 10%;
+        }
+        20%
+        {
+            width: 20%;
+        }
+        30%
+        {
+            width: 35%;
+        }
+        40%
+        {
+            width: 50%;
+        }
+        50%
+        {
+            width: 65%;
+        }
+        60%
+        {
+            width: 75%;
+        }
+        70%
+        {
+            width: 85%;
+        }
+        80%
+        {
+            width: 90%;
+        }
+        90%
+        {
+            width: 93%;
+        }
+        100%
+        {
+            width: 95%;
+        }
+    }
+</style>
+
+<div id="page_loading" class="page_middle">
+    <div class="bar_out">
+        <span class="bar_in"></span>
+    </div>
+    <img src="img/down.png" id="btn_enter" style="display: none;" class="btn_down">
+</div>
 
 <!--p1-->
 <div class="page page_cover">
+    <img src="img/down.png" class="btn_down">
     <div class="container">
         <span class="my_name">Henry Ge</span>
     </div>
@@ -29,6 +126,9 @@
 
 <!--p2-->
 <div class="page page_parallax">
+
+    <img src="img/up.png" class="btn_up">
+    <img src="img/down.png" class="btn_down">
 
     <div class="parallax_background">
         <div class="pb1"></div>
@@ -79,7 +179,10 @@
 
 
 <!--p3-->
-<div class="page page_device page_middle">
+<div class="page page_device">
+
+    <img src="img/up.png" class="btn_up">
+    <img src="img/down.png" class="btn_down">
 
     <div class="container">
 
