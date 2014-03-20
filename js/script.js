@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     $(window).load(function(){
         $(".bar_in").animate({width:'100%'},11000,"linear");
-        $("#btn_enter").css("display","block").addClass("btn_down");
+        $("#btn_enter").animate({top:'80%'});
     })
 
 
