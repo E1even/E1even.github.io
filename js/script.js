@@ -56,7 +56,7 @@ $(document).ready(function(){
         $(".parallax_background").animate({top:'-200%'},"linear");
         $(".parallax_btns").removeClass("rotate120 rotate240 rotate360").addClass("rotate360");
         $(".parallax_content").animate({left:'150%'},100);
-        $(".parallax_content1").animate({left:'60%'},1000);
+        $(".parallax_content1").animate({left:'55%'},1000);
     });
     $(".parallax_btn2").click(function(){
         $(".parallax_wrap").animate({top:'-100%'},"linear");
@@ -65,7 +65,7 @@ $(document).ready(function(){
         $(".parallax_content").removeClass("parallax_content_show");
         $(".parallax_content2").addClass("parallax_content_show");
         $(".parallax_content").animate({left:'150%'},100);
-        $(".parallax_content2").animate({left:'60%'},1000);
+        $(".parallax_content2").animate({left:'55%'},1000);
     });
     $(".parallax_btn3").click(function(){
         $(".parallax_wrap").animate({top:'-200%'},"linear");
@@ -74,7 +74,7 @@ $(document).ready(function(){
         $(".parallax_content").removeClass("parallax_content_show");
         $(".parallax_content3").addClass("parallax_content_show");
         $(".parallax_content").animate({left:'150%'},100);
-        $(".parallax_content3").animate({left:'60%'},1000);
+        $(".parallax_content3").animate({left:'55%'},1000);
     });
 
 

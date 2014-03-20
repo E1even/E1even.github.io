@@ -1,5 +1,9 @@
 @media screen and (min-width: 1910px)
 {
+    html
+    {
+        font-size: 108px;
+    }
     .container
     {
         width: 1920px;
@@ -7,14 +11,14 @@
         position: absolute;
         top: 0;
     }
-    .font
-    {
-        font-size: 1920px;
-    }
 }
 
 @media screen and (min-width: 1270px) and (max-width: 1910px)
 {
+    html
+    {
+        font-size: 72px;
+    }
     .container
     {
         width: 1280px;
@@ -22,14 +26,14 @@
         position: absolute;
         top: 0;
     }
-    .font
-    {
-        font-size: 1280px;
-    }
 }
 
 @media screen and (min-width: 1110px) and (max-width: 1270px)
 {
+    html
+    {
+        font-size: 63px;
+    }
     .container
     {
         width: 1120px;
@@ -37,14 +41,14 @@
         position: absolute;
         top: 0;
     }
-    .font
-    {
-        font-size: 1120px;
-    }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1110px)
 {
+    html
+    {
+        font-size: 54px;
+    }
     .container
     {
         width: 960px;
@@ -52,23 +56,19 @@
         position: absolute;
         top: 0;
     }
-    .font
-    {
-        font-size: 960px;
-    }
 }
 
 @media screen and (max-width: 950px)
 {
+    html
+    {
+        font-size: 36px;
+    }
     .container
     {
         width: 640px;
         height: 360px;
         position: absolute;
         top: 0;
-    }
-    .font
-    {
-        font-size: 640px;
     }
 }

@@ -69,13 +69,13 @@ html,body
 {
     display: block;
     color: #ddd;
-    font-size: 10%;
+    font-size: 2rem;
     font-family: LoveloLineLight;
     font-weight: bold;
     position: absolute;
     top: 40%;
     left: 25%;
-    text-shadow:0 0 5px black;
+    text-shadow:0 0 0.1rem black;
 }
 
 
@@ -87,16 +87,14 @@ html,body
 .parallax_window
 {
     display: block;
-    /*height: 20rem;
-    width: 20rem;*/
-    width: 18%;
-    height: 32%;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     position: absolute;
-    top: 32%;
-    left: 18%;
+    top: 3rem;
+    left: 3rem;
     overflow: hidden;
-    box-shadow: 0 0 0.5rem #555;
+    box-shadow: 0 0 0.1rem #555;
 }
 .parallax_wrap
 {
@@ -164,37 +162,37 @@ html,body
 .parallax_btns
 {
     display: block;
-    height: 32%;
-    width: 18%;
+    height: 0;
+    width: 0;
     position: absolute;
-    top: 32%;
-    left: 18%;
+    top: 5rem;
+    left: 5rem;
 }
 .parallax_btns div
 {
     display: block;
-    width: 30%;
-    height: 30%;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 0 0 0.3rem #555;
+    box-shadow: 0 0 0.1rem #555;
 }
 .parallax_btn1
 {
-    top: 35%;
-    right: -38%;
+    top: -0.5rem;
+    right: -3.4rem;
     background: deepskyblue;
 }
 .parallax_btn2
 {
-    left: 0;
-    top: -30%;
+    left: -2rem;
+    top: -3rem;
     background: springgreen;
 }
 .parallax_btn3
 {
-    left: 0;
-    bottom: -30%;
+    left: -2rem;
+    bottom: -3rem;
     background: #CC0000;
 }
 
@@ -202,7 +200,7 @@ html,body
 {
     display: block;
     color: white;
-    font-size: 10%;
+    font-size: 1.5rem;
     position: absolute;
     top: 10%;
     left: 45%;
@@ -210,27 +208,27 @@ html,body
 .parallax_text1
 {
     color: white;
-    font-size: 11%;
+    font-size: 2rem;
     position: absolute;
-    right: -600%;
-    top:-80%;
+    right: -5.5rem;
+    top:-1rem;
 }
 .parallax_text2
 {
     color: white;
-    font-size: 9%;
+    font-size: 2rem;
     position: absolute;
-    left:-550%;
-    top:-460%;
+    left:-6.5rem;
+    top:-5rem;
     -webkit-transform:rotate(-120deg);-moz-transform:rotate(-120deg);-ms-transform:rotate(-120deg);;-o-transform:rotate(-120deg);
 }
 .parallax_text3
 {
     color: white;
-    font-size: 11%;
+    font-size: 2rem;
     position: absolute;
-    left:-320%;
-    top:260%;
+    left:-2.8rem;
+    top:2rem;
     -webkit-transform:rotate(120deg);-moz-transform:rotate(120deg);-ms-transform:rotate(120deg);;-o-transform:rotate(120deg);
 }
 .parallax_content
@@ -239,7 +237,7 @@ html,body
     width: 30%;
     height: auto;
     color: white;
-    font-size: 4%;
+    font-size: 0.6rem;
     position: absolute;
     left: 150%;
     top:60%;
@@ -265,15 +263,15 @@ html,body
     width: 200%;
     height: 6.5%;
     background: white;
-    box-shadow: 0 0 5px grey;
-    font-size: 1.7%;
+    box-shadow: 0 0 0.2rem grey;
+    font-size: 0.3rem;
     line-height: 220%;
     z-index: 5;
 }
 .device_nav span
 {
     display: block;
-    width: 27.5%;
+    width: 10%;
     position: absolute;
     left: 0;
     top: 0;
@@ -286,7 +284,7 @@ html,body
     width: 20%;
     height: 100%;
     position: absolute;
-    left: 28%;
+    left: 11%;
     top: 0;
     color: dimgrey;
     text-align: center;
@@ -315,7 +313,7 @@ html,body
 }
 .device_btn2:hover
 {
-    color: seagreen;
+    color: lightseagreen;
 }
 .device_btn3
 {
@@ -390,6 +388,7 @@ html,body
 {
     position: absolute;
     border-radius: 5%;
+    overflow: hidden;
     -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
 }
 .device_screenpart
@@ -397,6 +396,19 @@ html,body
     position: absolute;
     overflow: hidden;
     -webkit-transition: all linear 0.5s;-moz-transition: all linear 0.5s;-ms-transition: all linear 0.5s;-o-transition: all linear 0.5s;transition: all linear 0.5s;
+}
+.device_reflect
+{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    height: 0;
+    border-left:1.9rem solid rgba(255,255,255,0.2);
+    border-right: 1.9rem solid transparent;
+    border-top: 1.9rem solid rgba(255,255,255,0.2);
+    border-bottom: 1.9rem solid transparent;
+    z-index: 5;
 }
 .device_buttonpart
 {
@@ -424,8 +436,8 @@ html,body
     height: 45%;
     left: 20%;
     top: 20%;
-    background:grey;
-    box-shadow: 0 0 3px grey;
+    background:#444;
+    z-index: 2;
 }
 .desktop .device_screenpart
 {
@@ -433,7 +445,6 @@ html,body
     height: 80%;
     top: 10%;
     left: 7%;
-    box-shadow:inset 0 0 3px grey;
 }
 .desktop .device_buttonpart
 {
@@ -447,7 +458,6 @@ html,body
     left: 45%;
     top: 65%;
     background: darkgrey;
-    box-shadow: 0 0 3px grey;
 }
 .desktop .device_bottompart
 {
@@ -456,20 +466,20 @@ html,body
     left: 35%;
     top: 70%;
     background: darkgrey;
-    box-shadow: 0 0 3px grey;
+    box-shadow: 0.01rem 0 0.02rem grey;
 }
 .laptop
 {}
 .laptop .device_mainpart
 {
-    width: 56%;
+    width: 58%;
     height: 40%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    left: 22%;
+    left: 21%;
     top: 30%;
     background: black;
-    box-shadow: 0 0 3px grey;
+    box-shadow: 0 0 0.05rem white;
 }
 .laptop .device_screenpart
 {
@@ -477,7 +487,6 @@ html,body
     height: 80%;
     top: 10%;
     left: 7%;
-    box-shadow: inset 0 0 3px grey;
 }
 .laptop .device_buttonpart
 {
@@ -510,21 +519,21 @@ html,body
     left: 30%;
     top: 23%;
     background: white;
-    box-shadow: 0 0 3px grey;
+    box-shadow: 0 0 0.05rem grey;
 }
 .tablet .device_screenpart
 {
-    width: 86%;
-    height: 80%;
-    top: 10%;
-    left: 7%;
-    box-shadow: inset 0 0 3px grey;
+    width: 80%;
+    height: 82%;
+    top: 9%;
+    left: 10%;
 }
 .tablet .device_buttonpart
 {
-    width: 8%;
-    height: 6%;
-    background: #ccc;
+    width: 0.25rem;
+    height: 0.25rem;
+    background: white;
+    box-shadow: inset 0 0 0.05rem #ccc;
 }
 .tablet .device_connectpart
 {
@@ -543,88 +552,35 @@ html,body
     background: #aaa;
 }
 
-/* win8.1 */
 .device_display1
 {
     display: block;
     width: 100%;
-    height:100%;
-    background: #4A1092;
-    font-size: 4%;
-}
-.device_display1 table
-{
-    width: 80%;
-    height: 60%;
-    position: absolute;
-    left: 10%;
-    top: 25%;
-    border-collapse: collapse;
-}
-.device_display1 td
-{
-    border: 1px solid rgba(0,0,0,0);
+    height: 100%;
+    background: url("../img/bg_desktop.png");
+    background-position: left;
+    background-size: cover;
 }
 
-/* mac */
 .device_display2
 {
     display: none;
     width: 100%;
-    height:100%;
-    background: dimgrey;
-    font-size: 4%;
+    height: 100%;
+    background: url("../img/bg_laptop.png");
+    background-position: center;
+    background-size: cover;
 }
-.device_display2 ul
-{
-    position: absolute;
-    left: 23%;
-    bottom: 0;
-    display: block;
-    width: 54%;
-    height: 6%;
-    background: #669;
-}
-.device_display2 li
-{
-    display: block;
-    width: 7%;
-    height: 95%;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
-    bottom:40%;
-}
-/* pad */
 .device_display3
 {
     display: none;
     width: 100%;
-    height:100%;
-    background: url("../img/bg_tablet.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-size: 4%;
-    box-shadow: inset 0 0 5px grey;
-}
-.device_display3 ul
-{
-    display: block;
-    width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    background: url("../img/bg_tablet.png");
+    background-position: center;
+    background-size: cover;
 }
-.device_display3 li
-{
-    display: block;
-    width: 12%;
-    height: 10%;
-    border-radius: 30%;
-    position: absolute;
-    background: white;
-}
+
 
 .device_cards
 {
@@ -636,20 +592,20 @@ html,body
     position: absolute;
     left: 18%;
     top: 22%;
-    font-size: 3%;
+    font-size: 0.5rem;
     word-wrap: break-word;
 }
 .device_card1
 {
-    background: deepskyblue;
+    background: rgba(173,81,226,0.4);
 }
 .device_card2
 {
-    background: palevioletred;
+    background: rgba(72,178,170,0.4);
 }
 .device_card3
 {
-    background: lightgreen;
+    background: rgba(100,180,255,0.4);
 }
 
 
