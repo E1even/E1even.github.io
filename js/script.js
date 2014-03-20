@@ -4,9 +4,8 @@
 $(document).ready(function(){
 
     $(window).load(function(){
-        $(".bar_in").animate({width:'100%'},11000,"linear",function(){$("#btn_enter").animate({top:'95%'});});
+        $(".load_bar_in").animate({width:'100%'},10000,"linear",function(){$("#btn_enter").animate({top:'95%'});});
     })
-
 
 
     //initial pages
@@ -17,14 +16,12 @@ $(document).ready(function(){
 
     //page up&down
     $(".btn_up").click(function(){
-        $(".page").addClass("page_load");
         $(".page_middle").animate({top:'100%'}).removeClass("page_middle").prev().addClass("page_middle");
         $(".page_middle").animate({top:'0'}).removeClass("page_top");
         $(".page_middle").nextAll().addClass("page_bottom");
         $(".page_middle").prevAll().addClass("page_top");
     });
     $(".btn_down").click(function(){
-        $(".page").addClass("page_load");
         $(".page_middle").animate({top:'-100%'}).removeClass("page_middle").next().addClass("page_middle");
         $(".page_middle").animate({top:'0'}).removeClass("page_bottom");
         $(".page_middle").nextAll().addClass("page_bottom");

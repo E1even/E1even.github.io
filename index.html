@@ -16,18 +16,19 @@
 <body>
 
 <style>
-    #page_loading
+    .page_load
     {
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
+        overflow: hidden;
         /* Full Width */
         background: url("img/bg_loading.gif");
     }
 
-    .bar_out
+    .load_bar_out
     {
         position: absolute;
         top: 50%;
@@ -35,7 +36,7 @@
         height: 5px;
         background: black;
     }
-    .bar_in
+    .load_bar_in
     {
         position: absolute;
         top: 2px;
@@ -106,12 +107,114 @@
             width: 95%;
         }
     }
+
+    .load_circle
+    {
+        position: absolute;
+        left:80%;
+        top: 80%;
+    }
+    .load_circle_out {
+        background-color: rgba(0,0,0,0);
+        border: 5px solid rgba(0,183,229,0.9);
+        opacity: .9;
+        border-right: 5px solid rgba(0,0,0,0);
+        border-left: 5px solid rgba(0,0,0,0);
+        border-radius: 50px;
+        box-shadow: 0 0 35px #2187e7;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        -moz-animation: spinPulse 1s infinite ease-in-out;
+        -webkit-animation: spinPulse 1s infinite linear;
+    }
+
+    .load_circle_in {
+        background-color: rgba(0,0,0,0);
+        border: 5px solid rgba(0,183,229,0.9);
+        opacity: .9;
+        border-left: 5px solid rgba(0,0,0,0);
+        border-right: 5px solid rgba(0,0,0,0);
+        border-radius: 50px;
+        box-shadow: 0 0 15px #2187e7;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        -moz-animation: spinoffPulse 1s infinite linear;
+        -webkit-animation: spinoffPulse 1s infinite linear;
+    }
+
+    @-moz-keyframes spinPulse {
+        0% {
+            -moz-transform: rotate(160deg);
+            opacity: 0;
+            box-shadow: 0 0 1px #2187e7;
+        }
+
+        50% {
+            -moz-transform: rotate(145deg);
+            opacity: 1;
+        }
+
+        100% {
+            -moz-transform: rotate(-320deg);
+            opacity: 0;
+        }
+        }
+
+    @-moz-keyframes spinoffPulse {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+        }
+
+    @-webkit-keyframes spinPulse {
+        0% {
+            -webkit-transform: rotate(160deg);
+            opacity: 0;
+            box-shadow: 0 0 1px #2187e7;
+        }
+
+        50% {
+            -webkit-transform: rotate(145deg);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: rotate(-320deg);
+            opacity: 0;
+        }
+        }
+
+    @-webkit-keyframes spinoffPulse {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+        }
 </style>
 
-<div id="page_loading" class="page_middle">
-    <div class="bar_out">
-        <span class="bar_in"></span>
+<div class="page_load page_middle">
+    <div class="load_bar_out">
+        <span class="load_bar_in"></span>
     </div>
+
+    <div class="load_circle">
+    <div class="load_circle_out"></div>
+    <div class="load_circle_in"></div>
+    </div>
+
     <img src="img/down.png" id="btn_enter" class="btn_down" style="top: 110%">
 </div>
 
